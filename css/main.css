@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans'), local('OpenSans'), url('../font/opensans.woff2') format('woff2'), url('../font/opensans.woff') format('woff'), url('../font/opensans.ttf') format('truetype');
+    font-family: 'Noto Sans';
+    src: local('Noto Sans'), local('NotoSans'), url('../font/notosans.woff2') format('woff2'), url('../font/notosans.woff') format('woff'), url('../font/notosans.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Noto Serif';
-    src: local('Noto Serif'), local('NotoSerif'), url('../font/notoserif.woff2') format('woff2'), url('../font/notoserif.woff') format('woff'), url('../font/notoserif.ttf') format('truetype');
+    font-family: 'Playfair Display';
+    src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url('../font/playfairdisplay.woff2') format('woff2'), url('../font/playfairdisplay.woff') format('woff'), url('../font/playfairdisplay.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -16,11 +16,11 @@ html {
 }
 
 body {
-    font-family: 'Open Sans';
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 38px;
     height: 100%;
     color: #333840;
     min-width: 1180px;
@@ -36,25 +36,28 @@ a:hover {
 }
 
 h1, h2 {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 40px;
-    margin-bottom: 18px;
-    font-family: 'Noto Serif';
+    font-weight: bold;
+    font-family: 'Playfair Display';
+}
+
+h1 {    
+    font-size: 46px;
+    line-height: 60px;
+    margin-bottom: 33px;
 }
 
 h2 {
-    margin-bottom: 37px;
+    font-size: 44px;
+    line-height: 50px;
 }
 
 .header {
-    background: #ffffff;
     width: 100%;
     z-index: 9;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    box-shadow: 0px 5px 15px rgba(33, 37, 41, 0.17), 0px 2px 5px rgba(51, 84, 117, 0.12);
+    /* box-shadow: 0px 5px 15px rgba(33, 37, 41, 0.17), 0px 2px 5px rgba(51, 84, 117, 0.12); */
 }
 
 .header__wrapper {
@@ -67,39 +70,41 @@ h2 {
 }
 
 .header__link {
-    text-decoration: none;
     font-size: 16px;
     line-height: 22px;
-    color: #1D1F24;
+    color: #ffffff;
     display: inline-block;
-    margin-left: 83px;
+    margin-left: 42px;
     font-weight: 600;
     cursor: pointer;
 }
 
-.header__link:hover {
-    color: #0061A8;
+.header__phone {
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 42px;
+    font-weight: 600;
 }
 
+/* .header__link:hover {
+    color: #0061A8;
+} */
+
 .homepage {
-    background: #0061A8;
+    background: #001c36 url(../images/homepage-background.jpg) no-repeat top center;
     color: #ffffff;
-    height: 920px;
+    height: 1000px;
     overflow: hidden;
-    margin-top: 80px;
 }
 
 .homepage__wrapper {
     width: 1140px;
     margin: 0 auto;
-    padding-top: 209px;
+    padding-top: 390px;
     position: relative;
-}
-
-.homepage__photo {
-    position: absolute;
-    top: 0;
-    left: 585px;
+    text-align: center;
 }
 
 .homepage__button {
@@ -107,10 +112,10 @@ h2 {
     height: 48px;
     display: inline-block;
     background: #ffffff;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 19px;
-    margin: 66px 30px 0 0;
+    margin: 58px 15px 0 15px;
     text-decoration: none;
     border-radius: 3px;
     letter-spacing: 0.02em;
@@ -125,51 +130,99 @@ h2 {
 }
 
 .about-us {
-    height: 660px;
+    height: 570px;
     text-align: center;
     box-sizing: border-box;
-    padding-top: 193px;
+    padding-top: 147px;
+    background: #f5f7fa;
+}
+
+.about-us__title {
+    margin-bottom: 39px;
 }
 
 .empire-digital {
-    background: #0061A8;
+    background: #004eaa;
     color: #ffffff;
-    height: 660px;
+    height: 813px;
 }
 
 .empire-digital__wrapper {
     width: 1140px;
     margin: 0 auto;
-    padding-top: 145px;
+    padding-top: 152px;
+    text-align: center;
+}
+
+.empire-digital__title {
+    margin-bottom: 110px;
+}
+
+.empire-digital__info {
     display: flex;
     justify-content: space-between;
+    font-size: 18px;
+    line-height: 32px;
 }
 
 .empire-digital__icon {
-    margin-bottom: 42px;
-    display: inline-block;
+    height: 110px;
 }
 
-.empire-digital__icon--last {
-    margin-bottom: 36px;
+.get-started {
+    height: 460px;
+    text-align: center;
+    padding-top: 143px;
+}
+
+.get-started__title {
+    margin-bottom: 37px;
+}
+
+.get-started__button {
+    width: 165px;
+    height: 48px;
+    display: inline-block;
+    background: #004eaa;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    margin: 0 15px 0 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 14px;
 }
 
 .contact-us {
-    background: #434A54;
-    color: #DDE3ED;
-    height: 400px;
+    background: #f5f7fa;
+    color: #333840;
+    height: 1205px;
 }
 
-.contact-us__wrapper {
+.contact-us__address {
     width: 1140px;
     margin: 0 auto;
-    padding-top: 130px;
-    display: flex;
-    justify-content: space-between;
+    padding-top: 146px;
+    text-align: center;
+    height: 450px;
+}
+
+.contact-us__title {
+    margin-bottom: 75px;
 }
 
 .contact-us__phone {
-    font-weight: 600;
+    font-weight: bold;
     font-size: 28px;
     line-height: 32px;
+    margin-bottom: 21px;
+}
+
+.contact-us__map {
+    height: 804px;
+    width: 100%;
 }
