@@ -1,9 +1,11 @@
-@font-face {
+/* @font-face {
     font-family: 'Noto Sans';
     src: local('Noto Sans'), local('NotoSans'), url('../font/notosans.woff2') format('woff2'), url('../font/notosans.woff') format('woff'), url('../font/notosans.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-}
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 
 @font-face {
     font-family: 'Playfair Display';
