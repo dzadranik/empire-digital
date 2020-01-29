@@ -78,9 +78,9 @@ h2 {
     line-height: 22px;
     color: #ffffff;
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 42px;
     font-weight: 600;
-    margin-top: 27px;
+    margin-top: 28px;
 }
 
 .header__link {
@@ -108,7 +108,7 @@ h2 {
     color: #1D1F24;
     text-align: center;
     box-sizing: border-box;
-    padding-top: 14px;
+    padding-top: 13px;
     transition: background 0.2s ease;
 }
 
@@ -181,7 +181,7 @@ h2 {
     color: #ffffff;
     text-align: center;
     box-sizing: border-box;
-    padding-top: 14px;
+    padding-top: 13px;
     transition: background 0.2s ease;
 }
 
@@ -210,6 +210,10 @@ h2 {
     font-size: 28px;
     line-height: 32px;
     margin-bottom: 20px;
+}
+
+.contact-us__map {
+    height: 680px;
 }
 
 .contact-us__copyright {
