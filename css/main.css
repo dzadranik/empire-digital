@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Playfair+Display&display=swap');
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../font/notosans-regular-webfont.woff2') format('woff2'),
+        url('../font/notosans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../font/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+        url('../font/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html {
     height: 100%;
@@ -60,7 +74,7 @@ h2 {
 
 .header__link,
 .header__phone {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 22px;
     color: #ffffff;
     display: inline-block;
